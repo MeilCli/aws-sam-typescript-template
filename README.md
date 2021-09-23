@@ -2,6 +2,7 @@
 This is template for MeilCli
 
 ## Usage
+- click `Use this template` at GitHub or execute `sam init --location gh:MeilCli/aws-sam-typescript-template` on you wanted path
 - rename and develop `src/main.ts#helloWorldHandler`
 - rename and edit `template.yml`
   - ex: resource name, path
