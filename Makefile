@@ -19,9 +19,9 @@ build-HelloWorldFunction:
 	$(MAKE) CONFIG=tsconfig.main.json DIST=$(DIST_MAIN) build-lambda-common
 
 build-lambda-common:
-	npm install
+	npm install --no-bin-links 
 	npm run build -- --project $(CONFIG)
-	$(CP) $(DIST) $(ARTIFACTS_DIR)
+	$(CP_R) $(DIST) $(ARTIFACTS_DIR)
 
 build-RuntimeDependenciesLayer:
 	mkdir -p $(ARTIFACTS_DIR_NODEJS)
