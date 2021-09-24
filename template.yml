@@ -27,7 +27,7 @@ Resources:
     Metadata:
       BuildMethod: makefile
     Properties:
-      Handler: dist/main.helloWorldHandler
+      Handler: main/main.helloWorldHandler
       Runtime: nodejs12.x
       Events:
         HelloWorld:
